@@ -1,0 +1,6 @@
+.virtualenvs/
+__pycache__/
+instance/
+.env
+Pipfile.lock
+*.pyc
