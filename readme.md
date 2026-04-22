@@ -1,7 +1,9 @@
-Productivity App API
+## Productivity App API
+
+
 A Flask-based backend for managing tasks, featuring user authentication and full CRUD functionality.
 
-Features
+#Features
 User Auth: Signup, Login, and Logout functionality with Bcrypt password hashing.
 
 Session Management: Uses Flask sessions to track logged-in users.
@@ -12,7 +14,7 @@ Database: SQLAlchemy with migrations managed via Flask-Migrate.
 
 Clean Structure: Project organized into Models, Schemas (Marshmallow), and Routes blueprints.
 
-Tech Stack
+#Tech Stack
 Python 3.x
 
 Flask (Web Framework)
@@ -23,7 +25,7 @@ Marshmallow (Serialization/Validation)
 
 Pipenv (Dependency Management)
 
-Setup & Installation
+#Setup & Installation
 1. Clone the repo
 Bash
 git clone https://github.com/jareelireri-ops/productivity-app.git
@@ -61,11 +63,10 @@ GET /check_session - Verify the current logged-in user.
 
 DELETE /logout - Clear the session.
 
+
 Tasks
-GET /tasks - Get all tasks for the logged-in user.
+GET /tasks — Fetch all your tasks.
 
-POST /tasks - Create a new task.
+POST /tasks — Create a new task.
 
-PATCH /tasks/<id> - Update a specific task.
-
-DELETE /tasks/<id> - Delete a specific task.
+PATCH /tasks/<id> — Update an existing task (e.g., change the title).
