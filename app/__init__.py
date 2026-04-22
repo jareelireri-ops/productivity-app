@@ -9,6 +9,7 @@ migrate = Migrate()
 bcrypt = Bcrypt()
 ma = Marshmallow()
 
+#the function to create the app and initialize all the extensions and register blueprints
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///productivity.db'

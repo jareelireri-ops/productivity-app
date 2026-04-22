@@ -1,6 +1,7 @@
 from app import ma
 from app.models.user import User
 
+# SCHEMA FOR USER MODEL
 class UserSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = User

@@ -8,5 +8,5 @@ class Task(db.Model):
     description = db.Column(db.String(255))
     importance_level = db.Column(db.Integer, default=1)
     
-    # RELATIONSHIP AS REQUIRED
+
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)

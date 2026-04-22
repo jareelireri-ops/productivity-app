@@ -3,6 +3,7 @@ from app import db
 from app.models.task import Task
 from app.schemas.task_schema import task_schema, tasks_schema
 
+# Blueprint for task routes
 tasks_bp = Blueprint('tasks', __name__)
 
 @tasks_bp.route('/tasks', methods=['GET', 'POST'])

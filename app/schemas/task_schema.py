@@ -1,6 +1,7 @@
 from app import ma
 from app.models.task import Task
 
+# SCHEMA FOR TASK MODEL
 class TaskSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Task

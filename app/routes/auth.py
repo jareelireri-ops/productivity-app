@@ -29,7 +29,7 @@ def login():
     data = request.get_json()
     user = User.query.filter_by(username=data.get('username')).first()
 
-    # Uses the .authenticate method from the User model
+    # Uses the .authenticate method in models/user.py to check password
     if user and user.authenticate(data.get('password')):
         session['user_id'] = user.id
         return user_schema.dump(user), 200
